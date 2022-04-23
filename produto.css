@@ -1,0 +1,295 @@
+
+.div-secondary-h1 {
+    position: absolute;
+    width: 339px;
+    height: 57px;
+    left: 319px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 57px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.div-secondary-detalhes{
+    position: absolute;
+    width: 250px;
+    height: 102px;
+    left: 42px;
+    top: 196px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    color: #767676;
+}
+
+.produto{
+    display: block;
+    position: absolute;
+    width: 360px;
+    height: 200px;
+    left: 315px;
+    top: 141px;
+    cursor: zoom-in;
+    transition: 1s;
+}
+
+.produto2{
+    display: none;
+    position: absolute;
+    width: 360px;
+    height: 200px;
+    left: 315px;
+    top: 141px;
+    cursor: zoom-in;
+    transition: 1s;
+ 
+}
+
+.produto3{
+    display: none;
+    position: absolute;
+    width: 360px;
+    height: 200px;
+    left: 315px;
+    top: 141px;
+    cursor: zoom-in;
+    transition: 1s;
+}
+
+.produto.active{
+    transform:scale(1.5,1.5);
+    cursor: zoom-out;
+}
+
+.produto2.active{
+    transform:scale(1.5,1.5);
+    cursor: zoom-out;
+}
+
+.produto3.active{
+    transform:scale(1.5,1.5);
+    cursor: zoom-out;
+}
+
+.div-secondary-ajustes{
+    position: absolute;
+    width: 274px;
+    height: 155px;
+    left: 703px;
+    top: 161px;
+}
+
+.div-secondary-ajustes p:nth-child(1){
+    position: absolute;
+    width: 52px;
+    height: 19px;
+    left: 14px;
+    top: 33px;
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.div-secondary-ajustes p:nth-child(2){
+    position: absolute;
+    width: 80px;
+    height: 19px;
+    left: 14px;
+    top: 79px;
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.tamanho{
+    position: absolute;
+    top: 4px;
+    text-align: center;
+    font-family: 'Jura';
+    font-style: normal;
+    font-size: 12px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.tamanho li:nth-child(1){
+    position: absolute;
+    width: 32px;
+    height: 21px;
+    left: 108px;
+    top: 79px;
+
+    background: #A6A6A6;
+    border-radius: 25px;
+}
+
+.tamanho li:nth-child(2){
+    position: absolute;
+    width: 32px;
+    height: 21px;
+    left: 148px;
+    top: 79px;
+    background: #A6A6A6;
+    border-radius: 25px;
+}
+
+.tamanho li:nth-child(3){
+    position: absolute;
+    width: 32px;
+    height: 21px;
+    left: 187px;
+    top: 79px;
+
+    background: #A6A6A6;
+    border-radius: 25px;
+}
+
+.tamanho li:nth-child(4){
+    position: absolute;
+    width: 32px;
+    height: 21px;
+    left: 108px;
+    top: 111px;
+    
+    background: #A6A6A6;
+    border-radius: 25px;
+}
+
+.tamanho li:nth-child(5){
+    position: absolute;
+    width: 32px;
+    height: 21px;
+    left: 148px;
+    top: 111px;
+    
+    background: #A6A6A6;
+    border-radius: 25px;
+}
+
+.tamanho li:nth-child(6){
+    position: absolute;
+    width: 32px;
+    height: 21px;
+    left: 187px;
+    top: 111px;
+
+    background: #A6A6A6;
+    border-radius: 25px;
+}
+
+.cores{
+    position: absolute;
+    left: 58px;
+    top: 32px;
+}
+.cores li{
+    display: inline-block;
+    margin: 0 0 0 15px;
+    cursor: pointer;
+}
+
+.comprar-button{
+    position: absolute;
+    width: 204px;
+    height: 53px;
+    left: 387px;
+    top: 394px;
+    background: #FFFFFF;
+    text-align: center;
+    font-family: 'Jura';
+    font-style: normal;
+    font-size: 24px;
+    line-height: 50px;
+    text-decoration: none;
+    color: #000000;
+    transition: 1s;
+}
+
+
+.comprar-button:hover {
+    transform:scale(1.0,1.0);
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.comprar-button::after {
+    content:"";
+    position:absolute;
+    top: 0;
+    left:0;
+    width: 0;
+    height:100%;
+    background-color:rgb(0, 0, 0);
+    z-index: -1 ;
+    transition: width 1s;
+}
+
+.comprar-button:hover::after{
+    width: 100%;
+}
+
+.preco {
+    position: absolute;
+    width: 100px;
+    height: 35px;
+    left: 60px;
+    top: 402px;
+    background: #000000;
+    border-radius: 15px;
+}
+
+.previa1{
+    position: absolute;
+    width: 60px;
+    height: 32px;
+    left: 1px;
+    top: 10px;
+}
+
+.previa-produto li:nth-child(1){
+    position: absolute;
+    width: 63px;
+    height: 53px;
+    left: 0px;
+    top: 234px;
+    cursor: pointer;
+    background: #ffffff;
+}
+
+.previa-produto li:nth-child(2){
+    position: absolute;
+    width: 63px;
+    height: 53px;
+    left: 80px;
+    top: 234px;
+    cursor: pointer;
+    background: #ffffff;
+}
+
+.previa-produto li:nth-child(3){
+    position: absolute;
+    width: 63px;
+    height: 53px;
+    left: 160px;
+    top: 234px;
+    background: #ffffff;
+    cursor: pointer;
+}
