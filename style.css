@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@700&family=Rubik:wght@300;400&display=swap');
+
+body {
+    background-color: black;
+    margin: 10px;
+}
+
+.nome-loja {
+    position: absolute;
+    width: 255px;
+    height: 46px;
+    left: 121px;
+    top: 14px;
+    text-decoration: none;
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 43px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.nav-home{
+    position: absolute;
+    width: 72px;
+    height: 28px;
+    left: 797px;
+    top: 23px;
+    text-decoration: none;
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.nav-produtos{
+    position: absolute;
+    width: 110px;
+    height: 28px;
+    left: 894px;
+    top: 23px;
+    text-decoration: none;
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.nav-contato{
+    position: absolute;
+    width: 97px;
+    height: 28px;
+    left: 1025px;
+    top: 23px;
+    text-decoration: none;
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.bag{
+    position: absolute;
+    height: 30px;
+    width: 27px;
+    left: 1778px;
+    top: 22px;
+    border-radius: 0px;
+}
+
+.div-primary{
+    background-image: url(img/img2.jpg);
+    position: absolute;
+    width: 1142px;
+    height: 428px;
+    left: 389px;
+    top: 112px;
+    border-radius: 50px;
+}
+    
+
+.div-primary-produtos{
+    position: absolute;
+    width: 320px;
+    left: 400px;
+    top: 0px;
+    font-family: 'Jura';
+    font-size: 70px;
+    color: #FFFFFF;
+}
+
+.div-primary-proximo{
+    position: absolute;
+    width: 80px;
+    height: 24px;
+    left: 897px;
+    top: 63px;
+
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.back {
+    position: absolute;
+    height: 13px;
+    width: 14px;
+    left: 997px;
+    top: 88px;
+    border-radius: 0px;
+    cursor: pointer;
+}
+
+.next {
+    position: absolute;
+    height: 13px;
+    width: 15px;
+    left: 1020px;
+    top: 88px;
+    border-radius: 0px;
+    cursor: pointer;
+}
+
+.div-secondary{
+    position: absolute;
+    width: 977px;
+    height: 500px;
+    left: 470px;
+    top: 261px;
+    border-radius: 50px;
+    background-image: url(img/img1.jpg);
+}
