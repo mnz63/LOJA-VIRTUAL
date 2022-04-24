@@ -30,7 +30,26 @@
     color: #767676;
 }
 
-.produto{
+.produto2,
+.produto3,
+.black-p2,
+.black-solado,
+.black-tenis,
+.cinza-solado,
+.cinza-tenis,
+.cinza-p2
+{
+    display: none;
+    position: absolute;
+    width: 360px;
+    height: 200px;
+    left: 315px;
+    top: 141px;
+    cursor: zoom-in;
+    transition: 1s;
+}
+
+.produto {
     display: block;
     position: absolute;
     width: 360px;
@@ -41,43 +60,20 @@
     transition: 1s;
 }
 
-.produto2{
-    display: none;
-    position: absolute;
-    width: 360px;
-    height: 200px;
-    left: 315px;
-    top: 141px;
-    cursor: zoom-in;
-    transition: 1s;
- 
-}
-
-.produto3{
-    display: none;
-    position: absolute;
-    width: 360px;
-    height: 200px;
-    left: 315px;
-    top: 141px;
-    cursor: zoom-in;
-    transition: 1s;
-}
-
-.produto.active{
+.produto.active,
+.produto2.active,
+.produto3.active,
+.black-p2.active,
+.black-solado.active,
+.black-tenis.active,
+.cinza-solado.active,
+.cinza-tenis.active,
+.cinza-p2.active
+{
     transform:scale(1.5,1.5);
     cursor: zoom-out;
 }
 
-.produto2.active{
-    transform:scale(1.5,1.5);
-    cursor: zoom-out;
-}
-
-.produto3.active{
-    transform:scale(1.5,1.5);
-    cursor: zoom-out;
-}
 
 .div-secondary-ajustes{
     position: absolute;
@@ -130,13 +126,17 @@
     cursor: pointer;
 }
 
+.tamanho li:active {
+    border: 1px solid #000000;
+}
+
+
 .tamanho li:nth-child(1){
     position: absolute;
     width: 32px;
     height: 21px;
     left: 108px;
     top: 79px;
-
     background: #A6A6A6;
     border-radius: 25px;
 }
@@ -246,17 +246,23 @@
     width: 100%;
 }
 
-.preco {
+.previa1{
     position: absolute;
-    width: 100px;
-    height: 35px;
-    left: 60px;
-    top: 402px;
-    background: #000000;
-    border-radius: 15px;
+    width: 60px;
+    height: 32px;
+    left: 1px;
+    top: 10px;
 }
 
-.previa1{
+.previa2{
+    position: absolute;
+    width: 60px;
+    height: 32px;
+    left: 1px;
+    top: 10px;
+}
+
+.previa3{
     position: absolute;
     width: 60px;
     height: 32px;
@@ -285,6 +291,71 @@
 }
 
 .previa-produto li:nth-child(3){
+    position: absolute;
+    width: 63px;
+    height: 53px;
+    left: 160px;
+    top: 234px;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+.previa-produto li:nth-child(4){
+    display: none;
+    position: absolute;
+    width: 63px;
+    height: 53px;
+    left: 0px;
+    top: 234px;
+    cursor: pointer;
+    background: #ffffff;
+}
+
+.previa-produto li:nth-child(5){
+    display: none;
+    position: absolute;
+    width: 63px;
+    height: 53px;
+    left: 80px;
+    top: 234px;
+    cursor: pointer;
+    background: #ffffff;
+}
+
+.previa-produto li:nth-child(6){
+    display: none;
+    position: absolute;
+    width: 63px;
+    height: 53px;
+    left: 160px;
+    top: 234px;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+.previa-produto li:nth-child(7){
+    display: none;
+    position: absolute;
+    width: 63px;
+    height: 53px;
+    left: 0px;
+    top: 234px;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+.previa-produto li:nth-child(8){
+    display: none;
+    position: absolute;
+    width: 63px;
+    height: 53px;
+    left: 80px;
+    top: 234px;
+    background: #ffffff;
+    cursor: pointer;
+}
+.previa-produto li:nth-child(9){
+    display: none;
     position: absolute;
     width: 63px;
     height: 53px;
