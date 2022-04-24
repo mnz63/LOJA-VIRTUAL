@@ -41,6 +41,130 @@
     .cores li:nth-child(3){
         left: 120px;
     }
+    .previa-produto li{
+        top: 154px;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    * {
+        position: absolute;
+    }
+
+    body{
+        width: 500px;
+    }
+    
+    .nome-loja{
+        visibility:hidden;
+    }
+    .nav-home{
+        left: 63px;
+    }
+    .nav-produtos{
+        left: 159px;
+    }
+    
+    .nav-contato{
+        left: 293px;
+    }
+
+    .back{
+        width: 9px;
+        left: 86.21%;
+        right: 11.68%;
+        top: 32px;
+        bottom: 90.42%;
+    }
+
+    .next{
+        width: 9px;
+        height: 8px;
+        left: 89.72%;
+        right: 8.18%;
+        top: 35px;
+        bottom: 90.42%;
+    }
+
+    .bag{
+        left: 20px;
+    }
+
+    .div-primary{
+        left: 0px;
+        width: 428px;
+        height: 428px;
+    }
+
+    .div-secondary{
+        top: 174px;
+        left: 0px;
+        width: 436px;
+        height: 794px;
+    }
+    .div-secondary-ajustes{
+        left: 0px;
+        top: 400px;
+    }
+
+    .div-secondary-h1{
+        left: 48px;
+        top: 16px;
+    }
+
+    .preco{
+        width: 56px;
+        height: 25px;
+        left: 20px;
+        top: 140px;
+        font-size: 10px;
+        line-height: 25px;
+    }
+
+    .div-primary-proximo{
+        width: 60px;
+        height: 18px;
+        left: 303px;
+        top: 14px;
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .div-primary-produtos {
+        width: 147px;
+    height: 38px;
+    left: 146px;
+    top: 13px;
+    font-size: 32px;
+    line-height: 38px;
+    }
+
+    .cores{
+        left: 56px;
+    }
+ 
+    .div-secondary-detalhes{
+        top: 665px;
+    }
+    .comprar-button{
+        top: 336px;
+        left: 116px;
+    }
+    .previa-produto{
+        top: 0px;
+        left: 109px;
+    }
+
+    .produto-img{
+        width: 349px;
+        height: 195px;
+        left: 43px;
+        top: 103px;
+    }
+
+    footer{
+        display: none;
+    }
 }
 
 @keyframes run {
