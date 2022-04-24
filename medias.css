@@ -1,0 +1,53 @@
+@media only screen and (max-width:1366px) {
+    * {
+        position: absolute;
+    }
+
+    body{
+        height: 120vh;
+    }
+    .nome-loja{
+        left: 20px;
+    }
+    .nav-home{
+        left: 513px;
+    }
+    .nav-produtos{
+        left: 610px;
+    }
+    
+    .nav-contato{
+        left: 741px;
+    }
+
+    .bag{
+        left: 1286px;
+    }
+
+    .div-primary{
+        left: 112px;
+    }
+
+    .div-secondary{
+        left: 193px;
+    }
+    .cores li:nth-child(1){
+        left: 40px;
+    }
+    .cores li:nth-child(2){
+        left: 80px;
+    }
+
+    .cores li:nth-child(3){
+        left: 120px;
+    }
+}
+
+@keyframes run {
+    0%{
+        left: -100%;
+    }
+    100%{
+        
+    }
+}
