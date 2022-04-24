@@ -1,3 +1,4 @@
+
 let tenis = document.querySelector(".produto-img");
 const cor1 = document.getElementById("c1");
 const cor2 = document.getElementById("c2");
@@ -20,77 +21,42 @@ let produtos = [
     },
 ];
 
-produtos.map((nike) => {
-    
-    document.getElementById("preco").innerHTML += `R$ ${nike.preco},00`;
+//alteraçao de imagens do produto e das previas
+let nike = produtos[0];
 
-    cor1.addEventListener("click", () => {
-        tenis.setAttribute("src", "img/tenis.png");
-        imgPrevia1.setAttribute("src", "img/tenis.png");
-        imgPrevia2.setAttribute("src", "img/posicao2.png");
-        imgPrevia3.setAttribute("src", "img/solado.png");
-        nike.cor.pop();
-        nike.cor.push("vermelho");
-        console.log(nike.cor);
+function addClick(parameter1, src1, src2, src3, imgTenis, corTenis){
+    parameter1.addEventListener('click', () =>{
+   tenis.setAttribute('src', imgTenis)
+   imgPrevia1.setAttribute('src', src1);
+   imgPrevia2.setAttribute('src', src2);
+   imgPrevia3.setAttribute('src', src3);
+   nike.cor.pop();
+   nike.cor.push(corTenis);
+   console.log(nike.cor)
 
-        if (nike.cor == "vermelho") {
-            imgPrevia1.addEventListener("click", () => {
-                tenis.setAttribute("src", "img/tenis.png");
-            });
-            imgPrevia2.addEventListener("click", () => {
-                tenis.setAttribute("src", "img/posicao2.png");
-            });
-            imgPrevia3.addEventListener("click", () => {
-                tenis.setAttribute("src", "img/solado.png");
-            });
-        }
-    });
-
-    cor2.addEventListener("click", () => {
-        tenis.setAttribute("src", "img/tenisblack.png");
-        imgPrevia1.setAttribute("src", "img/tenisblack.png");
-        imgPrevia2.setAttribute("src", "img/posicao2black.png");
-        imgPrevia3.setAttribute("src", "img/soladoblack.png");
-        nike.cor.pop();
-        nike.cor.push("preto");
-        console.log(nike.cor);
-
-        if (nike.cor == "preto") {
-            imgPrevia1.addEventListener("click", () => {
-                tenis.setAttribute("src", "img/tenisblack.png");
-            });
-            imgPrevia2.addEventListener("click", () => {
-                tenis.setAttribute("src", "img/posicao2black.png");
-            });
-            imgPrevia3.addEventListener("click", () => {
-                tenis.setAttribute("src", "img/soladoblack.png");
-            });
-        }
-    });
-
-    cor3.addEventListener("click", () => {
-        tenis.setAttribute("src", "img/teniscinza.png");
-        imgPrevia1.setAttribute("src", "img/teniscinza.png");
-        imgPrevia2.setAttribute("src", "img/posicao2cinza.png");
-        imgPrevia3.setAttribute("src", "img/soladocinza.png");
-        nike.cor.pop();
-        nike.cor.push("cinza");
-        console.log(nike.cor);
-
-        if (nike.cor == "preto") {
-            imgPrevia1.addEventListener("click", () => {
-                tenis.setAttribute("src", "img/teniscinza.png");
-            });
-            imgPrevia2.addEventListener("click", () => {
-                tenis.setAttribute("src", "img/posicao2cinza.png");
-            });
-            imgPrevia3.addEventListener("click", () => {
-                tenis.setAttribute("src", "img/soladocinza.png");
-            });
-        }
-    });
+   if (nike.cor == corTenis) {
+       imgPrevia1.addEventListener("click", () => {
+           tenis.setAttribute("src", src1);
+       });
+       imgPrevia2.addEventListener("click", () => {
+           tenis.setAttribute("src", src2);
+       });
+       imgPrevia3.addEventListener("click", () => {
+           tenis.setAttribute("src", src3);
+       });
+   }
 });
+};
 
+addClick(cor1, "img/tenis.png", "img/posicao2.png", "img/solado.png", "img/tenis.png", "vermelho");
+
+addClick(cor2, "img/tenisblack.png", "img/posicao2black.png", "img/soladoblack.png", "img/tenisblack.png", "preto");
+
+addClick(cor3, "img/teniscinza.png", "img/posicao2cinza.png", "img/soladocinza.png", "img/teniscinza.png", "cinza");
+
+
+//Preços
+document.getElementById("preco").innerHTML += `R$ ${nike.preco},00`;
 const botaoComprar = document.querySelector(".comprar-button");
 
 botaoComprar.addEventListener("click", function () {
