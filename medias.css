@@ -161,9 +161,10 @@
     }
 
     .produto-img{
-        width: 349px;
-        height: 195px;
-        left: 10%;
+        width: 300px;
+        height: 180px;
+        left: 50%;
+        transform: translate(-50%);
         top: 103px;
     }
 
