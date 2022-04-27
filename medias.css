@@ -1,11 +1,5 @@
 @media only screen and (max-width:1366px) {
-    * {
-        position: absolute;
-    }
-
-    body{
-        height: 120vh;
-    }
+    
     .nome-loja{
         left: 20px;
     }
@@ -44,17 +38,21 @@
     .previa-produto li{
         top: 154px;
     }
-}
 
-@media only screen and (min-width:500px) and (max-width: 1000px) {
-    * {
-        position: absolute;
-    }
-
-    body{
+    .contato{
         width: 100%;
     }
-    
+}
+
+@media only screen and (max-width: 800px) {
+    * {
+        position: relative;
+    }
+
+    body {
+        width: 98%;
+        margin: 5px 5px;
+    }
     .nome-loja{
         visibility:hidden;
     }
@@ -71,16 +69,16 @@
 
     .back{
         width: 9px;
-        left: 86.21%;
+        left: 82%;
         right: 11.68%;
-        top: 32px;
+        top: 32.4px;
         bottom: 90.42%;
     }
 
     .next{
         width: 9px;
         height: 8px;
-        left: 89.72%;
+        left: 85%;
         right: 8.18%;
         top: 35px;
         bottom: 90.42%;
@@ -91,16 +89,22 @@
     }
 
     .div-primary{
+        top: 25px;
         left: 0px;
-        width: 428px;
+        width: 100%;
         height: 428px;
     }
 
     .div-secondary{
-        top: 174px;
+        display: flex;
+        top: 100px;
         left: 0px;
-        width: 436px;
+        width: 100%;
         height: 794px;
+    }
+    .div-secondary h1{
+        transform: translate(-50%);
+        left: 50%;
     }
     .div-secondary-ajustes{
         left: 0px;
@@ -132,15 +136,15 @@
 
     .div-primary-produtos {
         width: 147px;
-    height: 38px;
-    left: 146px;
-    top: 13px;
-    font-size: 32px;
-    line-height: 38px;
+        height: 38px;
+        left: 146px;
+        top: 13px;
+        font-size: 32px;
+        line-height: 38px;
     }
 
     .cores{
-        left: 56px;
+        left: 0px;
     }
  
     .div-secondary-detalhes{
@@ -148,22 +152,27 @@
     }
     .comprar-button{
         top: 336px;
-        left: 116px;
+        transform: translate(-50%);
+        left: 50%;
     }
     .previa-produto{
-        top: 0px;
+        top: -30%;
         left: 109px;
     }
 
     .produto-img{
         width: 349px;
         height: 195px;
-        left: 43px;
+        left: 10%;
         top: 103px;
     }
 
-    footer{
-        display: none;
+    .contato{
+        visibility: hidden;
+        flex-direction: column;
+        width: 50%;
+        align-items: flex-start;
+        justify-content: center;
     }
 }
 
