@@ -153,8 +153,7 @@
     }
     .comprar-button{
         top: 336px;
-        transform: translate(-50%);
-        left: 50%;
+        left: 25%;
     }
     .previa-produto{
         top: -30%;
@@ -176,6 +175,9 @@
         width: 50%;
         align-items: flex-start;
         justify-content: center;
+    }
+    .carrinho {
+        display: none;
     }
 }
 
