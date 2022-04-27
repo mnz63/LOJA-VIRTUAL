@@ -68,19 +68,18 @@
     }
 
     .back{
-        width: 9px;
-        left: 82%;
+        width: 20px;
+        left: 78%;
         right: 11.68%;
-        top: 32.4px;
+        top: 50px;
         bottom: 90.42%;
     }
 
     .next{
-        width: 9px;
-        height: 8px;
+        width: 20px;
         left: 85%;
         right: 8.18%;
-        top: 35px;
+        top: 50px;
         bottom: 90.42%;
     }
 
@@ -89,6 +88,7 @@
     }
 
     .div-primary{
+        display: flex;
         top: 25px;
         left: 0px;
         width: 100%;
@@ -128,7 +128,7 @@
     .div-primary-proximo{
         width: 60px;
         height: 18px;
-        left: 303px;
+        left: 72%;
         top: 14px;
         font-size: 15px;
         line-height: 18px;
@@ -137,8 +137,9 @@
     .div-primary-produtos {
         width: 147px;
         height: 38px;
-        left: 146px;
         top: 13px;
+        transform: translate(-50%);
+        left: 50%;
         font-size: 32px;
         line-height: 38px;
     }
@@ -157,7 +158,8 @@
     }
     .previa-produto{
         top: -30%;
-        left: 109px;
+        transform: translate(-50%);
+        left: 40%;
     }
 
     .produto-img{
