@@ -13,6 +13,7 @@ body {
     left: 0px;
 }
 
+
 .nome-loja {
     position: absolute;
     width: 255px;
@@ -268,4 +269,21 @@ body {
     left: 26%;
     top: 500px;
     border: 1px solid black;
+}
+
+.icons img{
+    width: 50px;
+    margin: 15px;  
+}
+
+.github{
+    animation: float 5s ease-in-out infinite;
+}
+.instagram {
+    animation: float 5s ease-in-out infinite;
+    animation-delay: 1s;
+}
+.linkedin{
+    animation: float 5s ease-in-out infinite;
+    animation-delay: 2s;
 }
