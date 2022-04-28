@@ -184,6 +184,7 @@
         display: none;
     }
     .hamburguer{
+        display: block;
         position: absolute;
         background: transparent;
         border: none;
