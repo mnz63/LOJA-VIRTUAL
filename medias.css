@@ -174,10 +174,10 @@
     }
 
     .contato{
-        visibility: hidden;
+        
         flex-direction: column;
-        width: 50%;
-        align-items: flex-start;
+        width: 100%;
+        align-items: center;
         justify-content: center;
     }
     .carrinho {
