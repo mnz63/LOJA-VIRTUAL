@@ -73,3 +73,10 @@ const botaoComprar = document.querySelector(".comprar-button");
 botaoComprar.addEventListener("click", function () {
     botaoComprar.innerHTML = "Adicionado!";
 });
+
+
+const hamburguerMenu = document.querySelector('.hamburguer');
+const menuIsActive = () => {
+    hamburguerMenu.classList.toggle('active');
+};
+hamburguerMenu.addEventListener('click', menuIsActive)
