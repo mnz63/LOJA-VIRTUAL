@@ -6,21 +6,15 @@ const cor3 = document.getElementById("c3");
 const imgPrevia1 = document.getElementById("p1");
 const imgPrevia2 = document.getElementById("p2");
 const imgPrevia3 = document.getElementById("p3");
-const carrinhobtn = document.getElementById('bag');
-const carrinhobtn2 = document.querySelector('.bag');
+
+const carrinhobtn2 = document.querySelector('.bag2');
 const carrinho = document.querySelector('.carrinho');
 
-carrinhobtn.addEventListener('click', () =>{
-    carrinho.classList.toggle("hide");
-})
 
 carrinhobtn2.addEventListener('click', () =>{
     carrinho.classList.toggle("hide");
+    console.log('teste')
 })
-
-tenis.addEventListener("click", () => {
-    tenis.classList.toggle("active");
-});
 
 //PRODUTOS
 let produtos = [
@@ -74,9 +68,12 @@ botaoComprar.addEventListener("click", function () {
     botaoComprar.innerHTML = "Adicionado!";
 });
 
-
+//botao de menu em tela de celulares
+const menu = document.querySelector('.menu')
 const hamburguerMenu = document.querySelector('.hamburguer');
+
 const menuIsActive = () => {
     hamburguerMenu.classList.toggle('active');
+    menu.classList.toggle('active');
 };
 hamburguerMenu.addEventListener('click', menuIsActive)
