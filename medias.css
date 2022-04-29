@@ -57,20 +57,10 @@
         display: flex;
         width: 100%;
     }
-    .nome-loja{
+    .nome-loja, .nav-contato, .nav-produtos, .nav-home{
         display: none;
     }
-    .nav-home{
-        display: none;
-    }
-    .nav-produtos{
-        display: none;
-    }
-    
-    .nav-contato{
-        display: none;
-    }
-
+   
     .back{
         width: 20px;
         left: 78%;
@@ -218,6 +208,36 @@
         transform: translateY(-13px)
         rotate(-45deg);
     }
+
+    .menu{
+        position: fixed;
+        background-color: #ffffff;
+        width: 98%;
+        height: 20vh;
+        transition: 1s;
+        top: -300px;
+    }
+
+    
+
+    .menu ul {
+        padding: 0;
+    }
+
+    .menu li {
+        padding: 15px;
+        font-family: 'jura';
+        text-align: center;
+        margin: 0;
+        cursor: pointer;
+        font-size: 18px;
+    }
+
+    .menu.active{
+        display: inline-block;
+        top: 8%;
+    }
+
 }
 
 @keyframes run {
