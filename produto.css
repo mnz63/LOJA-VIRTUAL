@@ -44,20 +44,6 @@
     top: 25%;
 }
 
-.produto {
-    display: block;
-    position: absolute;
-    width: 360px;
-    height: 200px;
-    left: 315px;
-    top: 141px;
-    cursor: zoom-in;
-    transition: 1s;
-    animation-name: run3;
-    animation-duration: 1s;
-}
-
-
 
 .div-secondary-ajustes {
     position: absolute;
